@@ -1,16 +1,17 @@
 import type { MetaFunction } from "@remix-run/node";
+import "./flowers.css";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Surprise Tech" },
+    { title: "Yellow flowers By Id" },
     { name: "description", content: "Welcome to Remix!" },
   ];
 };
 
 export default function Index() {
   return (
-    <div className="container-root">
-      <p>Root</p>
+    <div className="container-flowers">
+      <p>Flores Amarillas Por ID</p>
       
     </div>
   );
