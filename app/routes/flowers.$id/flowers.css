@@ -59,6 +59,21 @@
   align-items: start;
 }
 
+@media only screen and (max-width: 500px) {
+  .container-photo {
+    height: 50vh;
+    width: 75%;
+  }
+  
+}
+
+@media only screen and (max-width: 400px) {
+  .container-photo {
+    height: 60vh;
+    width: 75%;
+  }
+  
+}
 .container-photo img {
   height: 100%;
   width: auto;
@@ -185,17 +200,15 @@ body {
   transform: translate(0, -50%);
   transform: scale(0.3);
   /* border: 10px solid red; */
-  /*margin-bottom: 100px;
-  */
+  margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 600px) {
   /* Estilos específicos para dispositivos con un ancho máximo de 600px */
   .flowers {
     font-size: 14px;
-    margin-bottom: 35%;
     letter-spacing: 3px;
-    transform: scale(0.5);
+    /* transform: scale(0.2); */
   }
 }
 
