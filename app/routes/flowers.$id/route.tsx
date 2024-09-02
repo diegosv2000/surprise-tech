@@ -4,6 +4,7 @@ import { unstable_defineLoader as defineLoader } from "@remix-run/node";
 import "./flowers.css";
 import { useLoaderData } from "@remix-run/react";
 import { getInfo } from "~/api";
+import { Flowers } from "./flower";
 
 export const meta: MetaFunction = () => {
   return [
@@ -34,7 +35,8 @@ export default function Index() {
       <div className="container-photo">
         <img src={data.photoUrl} alt="s" />
       </div>
-      
+
+      <Flowers />
     </div>
   );
 }
