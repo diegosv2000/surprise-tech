@@ -1,10 +1,68 @@
+:root {
+  --dark-color: #000000;
+}
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 .container-flowers{
-  border: 10px solid rgb(43, 255, 0);
+  /* border: 10px solid rgb(43, 255, 0); */
   height: 100vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(
+    ellipse at top,
+    transparent 0%,
+    var(--dark-color)
+  ),
+  radial-gradient(
+    ellipse at bottom,
+    var(--dark-color),
+    rgb(61, 82, 95)
+  ),
+  repeating-linear-gradient(
+    220deg,
+    rgb(0, 0, 0) 0px,
+    rgb(0, 0, 0) 19px,
+    transparent 19px,
+    transparent 22px
+  ),
+  repeating-linear-gradient(
+    189deg,
+    rgb(0, 0, 0) 0px,
+    rgb(0, 0, 0) 19px,
+    transparent 19px,
+    transparent 22px
+  ),
+  repeating-linear-gradient(
+    148deg,
+    rgb(0, 0, 0) 0px,
+    rgb(0, 0, 0) 19px,
+    transparent 19px,
+    transparent 22px
+  );
+}
+
+.container-photo{
+  border: 1px solid rgb(155, 212, 219);
+  box-shadow: 0px 0px 100px 1px rgba(54, 139, 150, 0.397);
+  height: 80vh;
+  max-height: 500px;
+  border-radius: 10px;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.container-photo img{
+  height: 100%;
+  width: auto;
+  object-fit: cover;
 }

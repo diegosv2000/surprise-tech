@@ -30,7 +30,11 @@ export default function Index() {
   const data = useLoaderData<CardDBO>();
   return (
     <div className="container-flowers">
-      <p>Flores Amarillas Por ID: {data.id}</p>
+      
+      <div className="container-photo">
+        <img src={data.photoUrl} alt="s" />
+      </div>
+      
     </div>
   );
 }
