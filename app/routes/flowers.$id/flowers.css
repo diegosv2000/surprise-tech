@@ -64,15 +64,13 @@
     height: 50vh;
     width: 75%;
   }
-  
 }
 
 @media only screen and (max-width: 400px) {
   .container-photo {
-    height: 60vh;
-    width: 75%;
+    height: 40vh;
+    width: 55%;
   }
-  
 }
 .container-photo img {
   height: 100%;
@@ -209,6 +207,13 @@ body {
     font-size: 14px;
     letter-spacing: 3px;
     /* transform: scale(0.2); */
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* Estilos específicos para dispositivos con un ancho máximo de 600px */
+  .flowers {
+    transform: scale(0.5);
   }
 }
 
