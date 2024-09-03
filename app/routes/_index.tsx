@@ -10,7 +10,22 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div className="container-root">
-      <p>Root</p>
+      <div className="header-root">
+        <h1>Surprise Tech</h1>
+      </div>
+      <div className="main-root">
+        <div className="title-root">
+          <h2>TU FOTO, NUESTRO ARTE</h2>
+        </div>
+        <p className="description-root">
+          Transforma tus recuerdos en un regalo digital único. Sube tu foto y
+          permítenos darle un toque especial que alegrará a esa persona especial
+          en tu vida.
+        </p>
+        <a href="./" target="_blank" className="go-whatsapp">
+          Contáctanos
+        </a>
+      </div>
     </div>
   );
 }

@@ -7,8 +7,129 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+
+:root {
+  --dark-color: #000000;
+}
+
+
 .container-root{
-  border: 10px solid red;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
+  padding: 2rem;
+  color: #fff;
+  background-image: radial-gradient(
+      ellipse at top,
+      transparent 0%,
+      var(--dark-color)
+    ),
+    radial-gradient(ellipse at bottom, var(--dark-color), rgb(61, 82, 95)),
+    repeating-linear-gradient(
+      220deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 19px,
+      transparent 19px,
+      transparent 22px
+    ),
+    repeating-linear-gradient(
+      189deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 19px,
+      transparent 19px,
+      transparent 22px
+    ),
+    repeating-linear-gradient(
+      148deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 19px,
+      transparent 19px,
+      transparent 22px
+    );
+}
+
+
+
+.header-root{
+
+}
+
+.header-root h1{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.main-root{
+  min-height: calc(100vh - 500px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem
+
+}
+
+.title-root{
+  
+}
+
+.title-root h2{
+  font-size: 4rem ;
+  font-weight: 800;
+  text-align: center;
+}
+
+.description-root{
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.go-whatsapp{
+  margin-top: 2rem;
+  padding: 10px 20px;
+  color: white;
+  background-color: rgb(106, 212, 103);
+  border-radius: 120px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: .4s;
+}
+
+.go-whatsapp:hover{
+  color: rgb(106, 212, 103);
+  background-color: #fff;
+
+}
+
+
+@media only screen and (max-width: 950px) {
+  .title-root h2{
+    font-size: 3rem ;
+  }
+
+  .description-root{
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .title-root h2{
+    font-size: 2rem ;
+  }
+
+  .description-root{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .title-root h2{
+    font-size: 2rem ;
+  }
+
+  .description-root{
+    font-size: 12px;
+  }
 }
