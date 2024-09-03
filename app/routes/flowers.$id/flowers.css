@@ -120,12 +120,12 @@
 }
 
 body {
-  display: flex;
+  /* display: flex;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: center; */
   height: 100vh;
   overflow: hidden;
-  perspective: 1000px;
+  /* perspective: 1000px; */
 }
 
 .titulo {
@@ -1699,20 +1699,7 @@ body {
   }
 }
 
-/* Reset de estilos básicos */
-body,
-h1,
-p {
-  margin: 0;
-  padding: 0;
-}
 
-/* Estilos generales */
-body {
-  font-family: "Arial", sans-serif;
-  background-color: #f7f7f7;
-  color: #333;
-}
 
 h1 {
   font-size: 2em;

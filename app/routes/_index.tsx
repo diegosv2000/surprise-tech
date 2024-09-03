@@ -11,7 +11,6 @@ export default function Index() {
   return (
     <div className="container-root">
       <p>Root</p>
-      
     </div>
   );
 }

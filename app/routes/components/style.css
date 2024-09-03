@@ -1,0 +1,76 @@
+:root {
+  --dark-color: #000000;
+}
+
+.container-404{
+  height: 100vh;
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  background-image: radial-gradient(
+      ellipse at top,
+      transparent 0%,
+      var(--dark-color)
+    ),
+    radial-gradient(ellipse at bottom, var(--dark-color), rgb(61, 82, 95)),
+    repeating-linear-gradient(
+      220deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 19px,
+      transparent 19px,
+      transparent 22px
+    ),
+    repeating-linear-gradient(
+      189deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 19px,
+      transparent 19px,
+      transparent 22px
+    ),
+    repeating-linear-gradient(
+      148deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 19px,
+      transparent 19px,
+      transparent 22px
+    );
+}
+
+.container-404 h1{
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.link-not-found{
+  text-shadow: 
+    0 0 5px #99daff,   /* Primer nivel de brillo */
+    0 0 10px #99daff,  /* Segundo nivel de brillo */
+    0 0 20px #99daff,  /* Tercer nivel de brillo */
+    0 0 40px #99daff,  /* Cuarto nivel con color */
+    0 0 80px #99daff,  /* Quinto nivel con color */
+    0 0 100px #99daff; /* Sexto nivel con color */
+    padding-bottom: 5px; /* Espacio inferior para el borde */
+  animation: border-blink 2s infinite;
+  transition: .2s;
+}
+
+
+.link-not-found:hover {
+  animation: none;
+  border-bottom: 2px solid #fff;
+}
+
+@keyframes border-blink {
+  0% {
+    border-bottom: 2px solid transparent;
+  }
+  50% {
+    border-bottom: 2px solid #fff; /* Puedes cambiar el color del borde aquí */
+  }
+  100% {
+    border-bottom: 2px solid transparent;
+  }
+}

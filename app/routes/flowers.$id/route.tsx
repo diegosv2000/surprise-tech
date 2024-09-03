@@ -5,6 +5,7 @@ import "./flowers.css";
 import { useLoaderData } from "@remix-run/react";
 import { getInfo } from "~/api";
 import { Flowers } from "./flower";
+import { NotFound } from "../components";
 
 export const meta: MetaFunction = () => {
   return [
@@ -13,13 +14,22 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+export function ErrorBoundary() {
+  return <NotFound />
+}
+
 export const loader = defineLoader(async ({ params }) => {
   const { id } = params;
 
   try {
     const response = await getInfo(id as string);
 
-    if (!response) throw new Error("No hay datos");
+    if (!response) {
+      throw new Response(null, {
+        status: 404,
+        statusText: "Not Found",
+      });
+    }
 
     return response;
   } catch (e) {
@@ -31,7 +41,6 @@ export default function Index() {
   const data = useLoaderData<CardDBO>();
   return (
     <div className="container-flowers">
-      
       <div className="container-photo">
         <img src={data.photoUrl} alt="s" />
       </div>
