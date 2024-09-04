@@ -8,7 +8,6 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
-  console.log("El ")
   return (
     <div className="container-root">
       <div className="header-root">

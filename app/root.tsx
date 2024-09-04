@@ -7,6 +7,7 @@ import {
 } from "@remix-run/react";
 import "./tailwind.css";
 import { NotFound } from "./routes/components";
+import { Analytics } from '@vercel/analytics/react';
 
 
 export function ErrorBoundary() {
@@ -24,6 +25,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         {children}
+        <Analytics />
         <ScrollRestoration />
         <Scripts />
       </body>
