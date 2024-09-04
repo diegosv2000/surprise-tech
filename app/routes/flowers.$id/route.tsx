@@ -9,7 +9,7 @@ import { NotFound } from "../components";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Yellow flowers By Id" },
+    { title: "🌻" },
     { name: "description", content: "Welcome to Remix!" },
   ];
 };
@@ -33,7 +33,7 @@ export const loader = defineLoader(async ({ params }) => {
 
     return response;
   } catch (e) {
-    throw new Error("Hubo un error xD");
+    throw new Error("Page Not Found");
   }
 });
 

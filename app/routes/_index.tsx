@@ -2,16 +2,17 @@ import type { MetaFunction } from "@remix-run/node";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Surprise Tech" },
+    { title: "Inicio" },
     { name: "description", content: "Welcome to Remix!" },
   ];
 };
 
 export default function Index() {
+  console.log("El ")
   return (
     <div className="container-root">
       <div className="header-root">
-        <h1>Surprise Tech</h1>
+        <h1>Arte en tu foto</h1>
       </div>
       <div className="main-root">
         <div className="title-root">
@@ -22,7 +23,7 @@ export default function Index() {
           permítenos darle un toque especial que alegrará a esa persona especial
           en tu vida.
         </p>
-        <a href="./" target="_blank" className="go-whatsapp">
+        <a href="https://wa.me/51987870396?text=Hola,%20quiero%20informacion!" target="_blank" className="go-whatsapp" rel="noreferrer">
           Contáctanos
         </a>
       </div>
