@@ -1,5 +1,3 @@
-
-
 .container-heart-section {
   /* border: 10px solid red; */
   height: 100vh;
@@ -296,8 +294,6 @@
   }
 }
 
-
-
 .heart-8 {
   position: absolute;
   transform: rotate(22.5deg) scale(0.5);
@@ -321,7 +317,6 @@
     display: block;
   }
 }
-
 
 .heart-9 {
   position: absolute;
@@ -371,7 +366,6 @@
   }
 }
 
-
 .heart-11 {
   position: absolute;
   transform: rotate(10deg) scale(1);
@@ -396,8 +390,7 @@
   }
 }
 
-
-.text-heart{
+.text-heart {
   width: 100%;
   /* border: 10px solid green; */
   font-size: 36px;
@@ -406,14 +399,14 @@
   text-align: center;
 }
 
-.hearts-view-container{
+.hearts-view-container {
   min-height: 100vh;
   width: 100%;
 }
-.heart-section-home{
+.heart-section-home {
   height: 100vh;
   width: 100%;
-  border: 10px solid yellow;
+  /* border: 10px solid yellow; */
   background: #000;
   color: white;
   font-size: 24px;
@@ -422,4 +415,26 @@
   justify-content: center;
   align-items: center;
   position: relative;
+}
+
+.section-heart {
+  view-timeline: --scroll;
+}
+
+.heart-section-home p {
+  animation: scale-up both ease-in-out, fade-away both linear;
+  animation-timeline: --scroll;
+  animation-range: exit 0% exit 100%, exit 20% exit 50%;
+}
+
+@keyframes scale-up {
+  to {
+    scale: 3.5;
+  }
+}
+
+@keyframes fade-away {
+  to {
+    opacity: 0;
+  }
 }

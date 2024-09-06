@@ -41,10 +41,10 @@ export default function Index() {
   // const data = useLoaderData<CardDBO>();
   return (
     <div className="hearts-view-container">
-      <section className="heart-section-home">
-        <p>tengo algo que decirte</p>
+      <section className="section-heart heart-section-home">
+        <p>TENGO ALGO QUE DECIRTE</p>
       </section>
-      <section className="container-heart-section">
+      <section className="section-heart container-heart-section">
         <Hearts text="¿Quieres ser mi novia?" />
       </section>
     </div>
