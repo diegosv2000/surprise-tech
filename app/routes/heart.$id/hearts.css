@@ -1,0 +1,425 @@
+
+
+.container-heart-section {
+  /* border: 10px solid red; */
+  height: 100vh;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.hearts-container {
+  /* border: 10px solid blue; */
+  width: 100%;
+  max-width: 1400px;
+  height: 100vh;
+  max-height: 700px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart-animated {
+  width: 16px;
+  height: 16px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  animation: moveUp 2.25s infinite;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: scale(0) translateY(0);
+    opacity: 0;
+  }
+
+  45% {
+    transform: scale(1) translateY(-25px);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(1) translateY(-25px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) translateY(-25px);
+    opacity: 0;
+  }
+}
+
+.heart {
+  --size: 16px;
+  --color: #ff4757;
+  box-shadow: -10px -10px 40px #ff4757;
+  transform: rotate(45deg);
+}
+
+.heart,
+.heart::before,
+.heart::after {
+  width: var(--size);
+  height: var(--size);
+  background: var(--color);
+}
+.heart::before,
+.heart::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+}
+.heart::before {
+  margin-top: calc(var(--size) * -0.5);
+}
+.heart::after {
+  margin-top: calc(var(--size) * -0.5);
+  margin-left: calc(var(--size) * -0.5);
+}
+
+.border-global {
+  position: absolute;
+  z-index: 0;
+  top: 0px;
+  width: 48px;
+  height: 48px;
+  border: 10px solid #ff4757;
+  transform: translate(-37%, -42%);
+  border-radius: 100%;
+  animation: borderheart1 2.25s infinite;
+  transition: 0.1.25s;
+}
+
+@keyframes borderheart1 {
+  0% {
+    border: 15px solid #ff4757;
+    transform: translate(-35%, -42%) scale(0.5);
+    opacity: 0;
+  }
+  25% {
+    border: 15px solid #ff4757;
+    transform: translate(-35%, -42%) scale(0.5);
+    opacity: 0;
+  }
+  26% {
+    border: 15px solid #ff4757;
+    transform: translate(-35%, -42%) scale(0.5);
+    opacity: 1;
+  }
+
+  60% {
+    border: 0px solid #ff4757;
+    transform: translate(-35%, -42%) scale(1);
+  }
+
+  61% {
+    border: 0px solid #ff4757;
+    transform: translate(-35%, -42%) scale(1);
+  }
+
+  100% {
+    border: 0px solid #ff4757;
+    opacity: 0;
+    transform: translate(-35%, -42%) scale(1);
+  }
+}
+
+.heart-1 {
+  position: absolute;
+  transform: rotate(-22.5deg) scale(1.5);
+  top: 10%;
+  left: 10%;
+  /* animation: animationheart1 2.55s infinite; */
+}
+/* 
+@keyframes animationheart1 {
+  0% {
+    display: none;
+  }
+  10% {
+    display: none;
+  }
+  11% {
+    display: block;
+  }
+
+  100% {
+    display: block;
+  }
+} */
+
+.heart-2 {
+  position: absolute;
+  transform: rotate(0deg) scale(1);
+  top: 20%;
+  left: 22.5%;
+  animation: animationheart2 2.85s infinite;
+}
+
+@keyframes animationheart2 {
+  0% {
+    display: none;
+  }
+  20% {
+    display: none;
+  }
+  21% {
+    display: block;
+  }
+
+  100% {
+    display: block;
+  }
+}
+
+.heart-3 {
+  position: absolute;
+  transform: rotate(22.5deg) scale(2);
+  top: 30%;
+  left: 65%;
+  animation: animationheart3 2.55s infinite;
+}
+
+@keyframes animationheart3 {
+  0% {
+    display: none;
+  }
+  10% {
+    display: none;
+  }
+  11% {
+    display: block;
+  }
+
+  100% {
+    display: block;
+  }
+}
+
+.heart-4 {
+  position: absolute;
+  transform: rotate(22.5deg) scale(1.5);
+  top: 10%;
+  left: 90%;
+  animation: animationheart4 2.65s infinite;
+}
+
+@keyframes animationheart4 {
+  0% {
+    display: none;
+  }
+  14% {
+    display: none;
+  }
+  15% {
+    display: block;
+  }
+
+  100% {
+    display: block;
+  }
+}
+
+.heart-5 {
+  position: absolute;
+  transform: rotate(-10deg) scale(0.5);
+  top: 30%;
+  left: 30%;
+  animation: animationheart5 3.25s infinite;
+}
+
+@keyframes animationheart5 {
+  0% {
+    display: none;
+  }
+  29% {
+    display: none;
+  }
+  30% {
+    display: block;
+  }
+
+  100% {
+    display: block;
+  }
+}
+
+.heart-6 {
+  position: absolute;
+  transform: rotate(0deg) scale(1);
+  top: 40%;
+  left: 80%;
+  animation: animationheart6 3.45s infinite;
+}
+
+@keyframes animationheart6 {
+  0% {
+    display: none;
+  }
+  34% {
+    display: none;
+  }
+  35% {
+    display: block;
+  }
+
+  100% {
+    display: block;
+  }
+}
+
+.heart-7 {
+  position: absolute;
+  transform: rotate(0deg) scale(0.75);
+  top: 50%;
+  left: 15%;
+  animation: animationheart7 2.85s infinite;
+}
+
+@keyframes animationheart7 {
+  0% {
+    display: none;
+  }
+  20% {
+    display: none;
+  }
+  21% {
+    display: block;
+  }
+
+  100% {
+    display: block;
+  }
+}
+
+
+
+.heart-8 {
+  position: absolute;
+  transform: rotate(22.5deg) scale(0.5);
+  top: 60%;
+  left: 70%;
+  animation: animationheart8 3.05s infinite;
+}
+
+@keyframes animationheart8 {
+  0% {
+    display: none;
+  }
+  25% {
+    display: none;
+  }
+  26% {
+    display: block;
+  }
+
+  100% {
+    display: block;
+  }
+}
+
+
+.heart-9 {
+  position: absolute;
+  transform: rotate(-10deg) scale(2);
+  top: 70%;
+  left: 25%;
+  animation: animationheart9 4.25s infinite;
+}
+
+@keyframes animationheart9 {
+  0% {
+    display: none;
+  }
+  46% {
+    display: none;
+  }
+  47% {
+    display: block;
+  }
+
+  100% {
+    display: block;
+  }
+}
+
+.heart-10 {
+  position: absolute;
+  transform: rotate(10deg) scale(2);
+  top: 80%;
+  left: 80%;
+  animation: animationheart10 2.5s infinite;
+}
+
+@keyframes animationheart10 {
+  0% {
+    display: none;
+  }
+  21% {
+    display: none;
+  }
+  22% {
+    display: block;
+  }
+
+  100% {
+    display: block;
+  }
+}
+
+
+.heart-11 {
+  position: absolute;
+  transform: rotate(10deg) scale(1);
+  top: 90%;
+  left: 10%;
+  animation: animationheart11 2.5s infinite;
+}
+
+@keyframes animationheart11 {
+  0% {
+    display: none;
+  }
+  21% {
+    display: none;
+  }
+  22% {
+    display: block;
+  }
+
+  100% {
+    display: block;
+  }
+}
+
+
+.text-heart{
+  width: 100%;
+  /* border: 10px solid green; */
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+.hearts-view-container{
+  min-height: 100vh;
+  width: 100%;
+}
+.heart-section-home{
+  height: 100vh;
+  width: 100%;
+  border: 10px solid yellow;
+  background: #000;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
