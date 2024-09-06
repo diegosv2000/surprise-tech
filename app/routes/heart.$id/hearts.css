@@ -128,6 +128,7 @@
 
 .heart-1 {
   position: absolute;
+  z-index: 10;
   transform: rotate(-22.5deg) scale(1.5);
   top: 10%;
   left: 10%;
@@ -151,6 +152,7 @@
 } */
 
 .heart-2 {
+  z-index: 10;
   position: absolute;
   transform: rotate(0deg) scale(1);
   top: 20%;
@@ -175,6 +177,7 @@
 }
 
 .heart-3 {
+  z-index: 10;
   position: absolute;
   transform: rotate(22.5deg) scale(2);
   top: 30%;
@@ -199,6 +202,7 @@
 }
 
 .heart-4 {
+  z-index: 10;
   position: absolute;
   transform: rotate(22.5deg) scale(1.5);
   top: 10%;
@@ -223,6 +227,7 @@
 }
 
 .heart-5 {
+  z-index: 10;
   position: absolute;
   transform: rotate(-10deg) scale(0.5);
   top: 30%;
@@ -247,6 +252,7 @@
 }
 
 .heart-6 {
+  z-index: 10;
   position: absolute;
   transform: rotate(0deg) scale(1);
   top: 40%;
@@ -271,6 +277,7 @@
 }
 
 .heart-7 {
+  z-index: 10;
   position: absolute;
   transform: rotate(0deg) scale(0.75);
   top: 50%;
@@ -295,6 +302,7 @@
 }
 
 .heart-8 {
+  z-index: 10;
   position: absolute;
   transform: rotate(22.5deg) scale(0.5);
   top: 60%;
@@ -319,6 +327,7 @@
 }
 
 .heart-9 {
+  z-index: 10;
   position: absolute;
   transform: rotate(-10deg) scale(2);
   top: 70%;
@@ -343,6 +352,7 @@
 }
 
 .heart-10 {
+  z-index: 10;
   position: absolute;
   transform: rotate(10deg) scale(2);
   top: 80%;
@@ -367,6 +377,7 @@
 }
 
 .heart-11 {
+  z-index: 10;
   position: absolute;
   transform: rotate(10deg) scale(1);
   top: 90%;
@@ -397,6 +408,7 @@
   font-weight: 700;
   color: white;
   text-align: center;
+  text-shadow: 0 0 5px rgb(255, 255, 255);
 }
 
 .hearts-view-container {
@@ -419,12 +431,21 @@
 
 .section-heart {
   view-timeline: --scroll;
+  overflow-x: hidden;
 }
 
 .heart-section-home p {
   animation: scale-up both ease-in-out, fade-away both linear;
   animation-timeline: --scroll;
   animation-range: exit 0% exit 100%, exit 20% exit 50%;
+}
+
+@media only screen and (max-width: 700px) {
+  .heart-section-home p {
+    animation: scale-up both ease-in-out, fade-away both linear;
+    animation-timeline: --scroll;
+    animation-range: exit 0% exit 100%, exit 20% exit 50%;
+  }
 }
 
 @keyframes scale-up {
@@ -437,4 +458,21 @@
   to {
     opacity: 0;
   }
+}
+
+/* Ancho de la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 0px; /* Ancho de la barra vertical */
+  height: 0px; /* Ancho de la barra horizontal */
+}
+
+/* Color de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(43, 25, 25, 0); /* Cambia a rojo */
+  border-radius: 0px; /* Redondea los bordes */
+}
+
+/* Fondo detrás de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background-color: #f0f0f000; /* Color de fondo de la pista */
 }

@@ -45,7 +45,8 @@ export default function Index() {
         <p>TENGO ALGO QUE DECIRTE</p>
       </section>
       <section className="section-heart container-heart-section">
-        <Hearts text="¿Quieres ser mi novia?" />
+        {/* <Hearts text="¿Quieres ser mi novia?" /> */}
+        <Hearts text="Eres el amor de mi vida" />
       </section>
     </div>
   );
