@@ -1,16 +1,16 @@
 import type { MetaFunction } from "@remix-run/node";
 import { unstable_defineLoader as defineLoader } from "@remix-run/node";
-
-import "./hearts.css";
-// import { useLoaderData } from "@remix-run/react";
+import { useLoaderData } from "@remix-run/react";
 import { getInfo } from "~/api";
 import { Hearts } from "./hearts";
 import { NotFound } from "../components";
+import "./hearts.css";
+import { GiftTypes } from "~/utils";
 
 export const meta: MetaFunction = () => {
   return [
     { title: "🎁" },
-    { name: "description", content: "Welcome to Remix!" },
+    { name: "description", content: "Welcome!" },
   ];
 };
 
@@ -22,7 +22,7 @@ export const loader = defineLoader(async ({ params }) => {
   const { id } = params;
 
   try {
-    const response = await getInfo(id as string);
+    const response = await getInfo(id as string, GiftTypes.DECLARATION);
 
     if (!response) {
       throw new Response(null, {
@@ -38,15 +38,15 @@ export const loader = defineLoader(async ({ params }) => {
 });
 
 export default function Index() {
-  // const data = useLoaderData<CardDBO>();
+  const {data} = useLoaderData<DeclarationDBO>();
   return (
     <div className="hearts-view-container">
       <section className="section-heart heart-section-home">
-        <p>TENGO ALGO QUE DECIRTE</p>
+        <p>{data.introduction}</p>
       </section>
       <section className="section-heart container-heart-section">
         {/* <Hearts text="¿Quieres ser mi novia?" /> */}
-        <Hearts text="Eres el amor de mi vida" />
+        <Hearts text={data.declaration} />
       </section>
     </div>
   );
