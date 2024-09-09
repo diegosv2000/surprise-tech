@@ -1,11 +1,11 @@
 import type { MetaFunction } from "@remix-run/node";
 import { unstable_defineLoader as defineLoader } from "@remix-run/node";
-
 import "./flowers.css";
 import { useLoaderData } from "@remix-run/react";
 import { getInfo } from "~/api";
 import { Flowers } from "./flower";
 import { NotFound } from "../components";
+import { GiftTypes } from "~/utils";
 
 export const meta: MetaFunction = () => {
   return [
@@ -22,7 +22,7 @@ export const loader = defineLoader(async ({ params }) => {
   const { id } = params;
 
   try {
-    const response = await getInfo(id as string);
+    const response = await getInfo(id as string, GiftTypes.YELLOW_FLOWERS);
 
     if (!response) {
       throw new Response(null, {
@@ -38,7 +38,7 @@ export const loader = defineLoader(async ({ params }) => {
 });
 
 export default function Index() {
-  const data = useLoaderData<CardDBO>();
+  const {data} = useLoaderData<YellowFlowersDBO>();
   return (
     <div className="container-flowers">
       <div className="container-photo">
