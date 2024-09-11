@@ -42,10 +42,14 @@ export default function Index() {
   return (
     <div className="hearts-view-container">
       <section className="section-heart heart-section-home">
-        <p>{data.introduction}</p>
+        <p className="heart-initial-text">TENGO ALGO QUE DECIRTE</p>
+        <p className="heart-indication">(DESLIZA HACIA ABAJO)</p>
       </section>
+      <section className="section-heart heart-section-home">
+        <p className="heart-section-home-text">{data.introduction}</p>
+        <p className="heart-indication">(SIGUE DESLIZANDO)</p>
+        </section>
       <section className="section-heart container-heart-section">
-        {/* <Hearts text="¿Quieres ser mi novia?" /> */}
         <Hearts text={data.declaration} />
       </section>
     </div>
