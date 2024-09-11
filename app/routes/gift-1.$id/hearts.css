@@ -217,7 +217,7 @@
   justify-content: center;
   align-content: center;
   animation: moveUp-4 2.25s infinite;
-  animation-delay: 1s;
+  animation-delay: 1.5s;
 }
 
 @keyframes moveUp-4 {
@@ -251,7 +251,7 @@
   transform: translate(-37%, -42%);
   border-radius: 100%;
   animation: borderheart-4 2.25s infinite;
-  animation-delay: 1s;
+  animation-delay: 1.5s;
 }
 
 @keyframes borderheart-4 {
@@ -296,7 +296,7 @@
   justify-content: center;
   align-content: center;
   animation: moveUp-5 2.25s infinite;
-  animation-delay: 1s;
+  /* animation-delay: 1s; */
 }
 
 @keyframes moveUp-5 {
@@ -330,7 +330,7 @@
   transform: translate(-37%, -42%);
   border-radius: 100%;
   animation: borderheart-5 2.25s infinite;
-  animation-delay: 1s;
+  /* animation-delay: 1s; */
 }
 
 @keyframes borderheart-5 {
@@ -454,7 +454,7 @@
   justify-content: center;
   align-content: center;
   animation: moveUp-7 2.25s infinite;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
 @keyframes moveUp-7 {
@@ -488,7 +488,7 @@
   transform: translate(-37%, -42%);
   border-radius: 100%;
   animation: borderheart-7 2.25s infinite;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
 @keyframes borderheart-7 {
@@ -533,7 +533,7 @@
   justify-content: center;
   align-content: center;
   animation: moveUp-9 2.25s infinite;
-  animation-delay: 1s;
+  animation-delay: 1.5s;
 }
 
 @keyframes moveUp-9 {
@@ -567,7 +567,7 @@
   transform: translate(-37%, -42%);
   border-radius: 100%;
   animation: borderheart-9 2.25s infinite;
-  animation-delay: 1s;
+  animation-delay: 1.5s;
 }
 
 @keyframes borderheart-9 {
@@ -612,7 +612,7 @@
   justify-content: center;
   align-content: center;
   animation: moveUp-10 2.25s infinite;
-  animation-delay: 1s;
+  /* animation-delay: 1s; */
 }
 
 @keyframes moveUp-10 {
@@ -646,7 +646,7 @@
   transform: translate(-37%, -42%);
   border-radius: 100%;
   animation: borderheart-10 2.25s infinite;
-  animation-delay: 1s;
+  /* animation-delay: 1s; */
 }
 
 @keyframes borderheart-10 {
@@ -691,7 +691,7 @@
   justify-content: center;
   align-content: center;
   animation: moveUp-11 2.25s infinite;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
 @keyframes moveUp-11 {
@@ -725,7 +725,7 @@
   transform: translate(-37%, -42%);
   border-radius: 100%;
   animation: borderheart-11 2.25s infinite;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
 @keyframes borderheart-11 {
