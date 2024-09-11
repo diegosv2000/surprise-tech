@@ -83,7 +83,7 @@ export const Hearts:FC<HeartsProps> = ({text}) => {
       </div>
 
       <div className="heart-global-11">
-        <div className="heart-animated">
+        <div className="heart-animated-11">
           <div className="border-global-11"></div>
           <div className="heart"></div>
         </div>

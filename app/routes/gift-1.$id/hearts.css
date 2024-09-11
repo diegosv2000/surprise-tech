@@ -52,14 +52,14 @@
 }
 
 
-
+/* HEART 11 */
 .heart-animated-11 {
   width: 16px;
   height: 16px;
   display: grid;
   justify-content: center;
   align-content: center;
-  animation: moveUp-11 2.25s infinite;
+  animation: moveUp-11 2.5s infinite;
 }
 
 @keyframes moveUp-11 {
@@ -67,12 +67,16 @@
     transform: scale(0) translateY(0);
     opacity: 0;
   }
+  11% {
+    transform: scale(0) translateY(0);
+    opacity: 0;
+  }
 
-  45% {
+  56% {
     transform: scale(1) translateY(-25px);
     opacity: 1;
   }
-  60% {
+  71% {
     transform: scale(1) translateY(-25px);
     opacity: 1;
   }
@@ -89,46 +93,51 @@
   top: 0px;
   width: 48px;
   height: 48px;
-  border: 10px solid #00ff40;
+  border: 10px solid #ff4757;
   transform: translate(-37%, -42%);
   border-radius: 100%;
-  animation: borderheart11 2.25s infinite;
-  transition: 0.1.25s;
+  animation: borderheart11 2.5s infinite;
 }
-
 @keyframes borderheart11 {
   0% {
-    border: 15px solid #33ff00;
+    border: 15px solid #ff4757;
     transform: translate(-35%, -42%) scale(0.5);
     opacity: 0;
   }
-  25% {
-    border: 15px solid #33ff00;
+  11% {
+    border: 15px solid #ff4757;
     transform: translate(-35%, -42%) scale(0.5);
     opacity: 0;
   }
-  26% {
-    border: 15px solid #33ff00;
+  36% {
+    border: 15px solid #ff4757;
+    transform: translate(-35%, -42%) scale(0.5);
+    opacity: 0;
+  }
+  37% {
+    border: 15px solid #ff4757;
     transform: translate(-35%, -42%) scale(0.5);
     opacity: 1;
   }
 
-  60% {
-    border: 0px solid #33ff00;
+  71% {
+    border: 0px solid #ff4757;
     transform: translate(-35%, -42%) scale(1);
   }
 
-  61% {
-    border: 0px solid #33ff00;
+  72% {
+    border: 0px solid #ff4757;
     transform: translate(-35%, -42%) scale(1);
   }
 
   100% {
-    border: 0px solid #33ff00;
+    border: 0px solid #ff4757;
     opacity: 0;
     transform: translate(-35%, -42%) scale(1);
   }
 }
+
+/* --------------------------- */
 
 .heart {
   --size: 16px;
