@@ -12,77 +12,77 @@ export const Hearts:FC<HeartsProps> = ({text}) => {
       </div>
 
       {/* CORAZONES */}
-      <div className="heart-1">
+      <div className="heart-global-1">
         <div className="heart-animated">
           <div className="border-global"></div>
           <div className="heart"></div>
         </div>
       </div>
 
-      <div className="heart-2">
+      <div className="heart-global-2">
         <div className="heart-animated">
           <div className="border-global"></div>
           <div className="heart"></div>
         </div>
       </div>
 
-      <div className="heart-3">
+      <div className="heart-global-3">
         <div className="heart-animated">
           <div className="border-global"></div>
           <div className="heart"></div>
         </div>
       </div>
 
-      <div className="heart-4">
+      <div className="heart-global-4">
         <div className="heart-animated">
           <div className="border-global"></div>
           <div className="heart"></div>
         </div>
       </div>
 
-      <div className="heart-5">
+      <div className="heart-global-5">
         <div className="heart-animated">
           <div className="border-global"></div>
           <div className="heart"></div>
         </div>
       </div>
 
-      <div className="heart-6">
+      <div className="heart-global-6">
         <div className="heart-animated">
           <div className="border-global"></div>
           <div className="heart"></div>
         </div>
       </div>
 
-      <div className="heart-7">
+      <div className="heart-global-7">
         <div className="heart-animated">
           <div className="border-global"></div>
           <div className="heart"></div>
         </div>
       </div>
 
-      <div className="heart-8">
+      <div className="heart-global-8">
         <div className="heart-animated">
           <div className="border-global"></div>
           <div className="heart"></div>
         </div>
       </div>
 
-      <div className="heart-9">
+      <div className="heart-global-9">
         <div className="heart-animated">
           <div className="border-global"></div>
           <div className="heart"></div>
         </div>
       </div>
 
-      <div className="heart-10">
+      <div className="heart-global-10">
         <div className="heart-animated">
           <div className="border-global"></div>
           <div className="heart"></div>
         </div>
       </div>
 
-      <div className="heart-11">
+      <div className="heart-global-11">
         <div className="heart-animated">
           <div className="border-global"></div>
           <div className="heart"></div>

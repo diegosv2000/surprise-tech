@@ -126,254 +126,84 @@
   }
 }
 
-.heart-1 {
+.heart-global-1 {
   position: absolute;
   z-index: 10;
   transform: rotate(-22.5deg) scale(1.5);
   top: 10%;
   left: 10%;
-  /* animation: animationheart1 2.55s infinite; */
 }
-/* 
-@keyframes animationheart1 {
-  0% {
-    display: none;
-  }
-  10% {
-    display: none;
-  }
-  11% {
-    display: block;
-  }
 
-  100% {
-    display: block;
-  }
-} */
-
-.heart-2 {
+.heart-global-2 {
   z-index: 10;
   position: absolute;
   transform: rotate(0deg) scale(1);
   top: 20%;
   left: 22.5%;
-  animation: animationheart2 2.85s infinite;
 }
 
-@keyframes animationheart2 {
-  0% {
-    display: none;
-  }
-  20% {
-    display: none;
-  }
-  21% {
-    display: block;
-  }
-
-  100% {
-    display: block;
-  }
-}
-
-.heart-3 {
+.heart-global-3 {
   z-index: 10;
   position: absolute;
   transform: rotate(22.5deg) scale(2);
   top: 30%;
   left: 65%;
-  animation: animationheart3 2.55s infinite;
 }
 
-@keyframes animationheart3 {
-  0% {
-    display: none;
-  }
-  10% {
-    display: none;
-  }
-  11% {
-    display: block;
-  }
-
-  100% {
-    display: block;
-  }
-}
-
-.heart-4 {
+.heart-global-4 {
   z-index: 10;
   position: absolute;
   transform: rotate(22.5deg) scale(1.5);
   top: 10%;
   left: 90%;
-  animation: animationheart4 2.65s infinite;
 }
 
-@keyframes animationheart4 {
-  0% {
-    display: none;
-  }
-  14% {
-    display: none;
-  }
-  15% {
-    display: block;
-  }
-
-  100% {
-    display: block;
-  }
-}
-
-.heart-5 {
+.heart-global-5 {
   z-index: 10;
   position: absolute;
   transform: rotate(-10deg) scale(0.5);
   top: 30%;
   left: 30%;
-  animation: animationheart5 3.25s infinite;
 }
 
-@keyframes animationheart5 {
-  0% {
-    display: none;
-  }
-  29% {
-    display: none;
-  }
-  30% {
-    display: block;
-  }
-
-  100% {
-    display: block;
-  }
-}
-
-.heart-6 {
+.heart-global-6 {
   z-index: 10;
   position: absolute;
   transform: rotate(0deg) scale(1);
   top: 40%;
   left: 80%;
-  animation: animationheart6 3.45s infinite;
 }
 
-@keyframes animationheart6 {
-  0% {
-    display: none;
-  }
-  34% {
-    display: none;
-  }
-  35% {
-    display: block;
-  }
-
-  100% {
-    display: block;
-  }
-}
-
-.heart-7 {
+.heart-global-7 {
   z-index: 10;
   position: absolute;
   transform: rotate(0deg) scale(0.75);
   top: 50%;
   left: 15%;
-  animation: animationheart7 2.85s infinite;
 }
 
-@keyframes animationheart7 {
-  0% {
-    display: none;
-  }
-  20% {
-    display: none;
-  }
-  21% {
-    display: block;
-  }
-
-  100% {
-    display: block;
-  }
-}
-
-.heart-8 {
+.heart-global-8 {
   z-index: 10;
   position: absolute;
   transform: rotate(22.5deg) scale(0.5);
   top: 60%;
   left: 70%;
-  animation: animationheart8 3.05s infinite;
 }
 
-@keyframes animationheart8 {
-  0% {
-    display: none;
-  }
-  25% {
-    display: none;
-  }
-  26% {
-    display: block;
-  }
-
-  100% {
-    display: block;
-  }
-}
-
-.heart-9 {
+.heart-global-9 {
   z-index: 10;
   position: absolute;
   transform: rotate(-10deg) scale(2);
   top: 70%;
   left: 25%;
-  animation: animationheart9 4.25s infinite;
 }
 
-@keyframes animationheart9 {
-  0% {
-    display: none;
-  }
-  46% {
-    display: none;
-  }
-  47% {
-    display: block;
-  }
-
-  100% {
-    display: block;
-  }
-}
-
-.heart-10 {
+.heart-global-10 {
   z-index: 10;
   position: absolute;
   transform: rotate(10deg) scale(2);
   top: 80%;
   left: 80%;
-  animation: animationheart10 2.5s infinite;
-}
-
-@keyframes animationheart10 {
-  0% {
-    display: none;
-  }
-  21% {
-    display: none;
-  }
-  22% {
-    display: block;
-  }
-
-  100% {
-    display: block;
-  }
 }
 
 .heart-11 {
@@ -382,23 +212,6 @@
   transform: rotate(10deg) scale(1);
   top: 90%;
   left: 10%;
-  animation: animationheart11 2.5s infinite;
-}
-
-@keyframes animationheart11 {
-  0% {
-    display: none;
-  }
-  21% {
-    display: none;
-  }
-  22% {
-    display: block;
-  }
-
-  100% {
-    display: block;
-  }
 }
 
 .text-heart {
@@ -409,27 +222,6 @@
   color: white;
   text-align: center;
   text-shadow: 0 0 5px rgb(255, 255, 255);
-  animation: heartbeat 1.5s infinite;
-}
-
-@keyframes heartbeat {
-  0% {
-    transform: scale(1);
-    text-shadow: 0 0 5px rgb(255, 255, 255);
-  }
-  30% {
-    /* color: #ff4757; */
-    transform: scale(1.2); /* Agranda el texto para el latido */
-    text-shadow: 0 0 15px #ffffff, 0 0 20px #ffffff; /* Intensifica el brillo */
-  }
-  60% {
-    transform: scale(1);
-    text-shadow: 0 0 5px rgb(255, 255, 255);
-  }
-  100% {
-    transform: scale(1);
-    text-shadow: 0 0 5px rgb(255, 255, 255);
-  }
 }
 
 .hearts-view-container {
@@ -451,34 +243,7 @@
 }
 
 .section-heart {
-  view-timeline: --scroll;
   overflow-x: hidden;
-}
-
-.heart-section-home p {
-  animation: scale-up both ease-in-out, fade-away both linear;
-  animation-timeline: --scroll;
-  animation-range: exit 0% exit 100%, exit 20% exit 50%;
-}
-
-@media only screen and (max-width: 700px) {
-  .heart-section-home p {
-    animation: scale-up both ease-in-out, fade-away both linear;
-    animation-timeline: --scroll;
-    animation-range: exit 0% exit 100%, exit 20% exit 50%;
-  }
-}
-
-@keyframes scale-up {
-  to {
-    scale: 3.5;
-  }
-}
-
-@keyframes fade-away {
-  to {
-    opacity: 0;
-  }
 }
 
 /* Ancho de la barra de desplazamiento */
